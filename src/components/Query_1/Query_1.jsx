@@ -23,7 +23,7 @@ const CrimeMap = () => {
     try {
       if (!selectedCrimeType) return;
 
-      const response = await fetch(`http://localhost:5000/get_crime_location/${selectedCrimeType}`);
+      const response = await fetch(`https://1d4a-181-235-31-152.ngrok-free.app/get_crime_location/${selectedCrimeType}`);
       const data = await response.json();
       setCrimeLocations(data);
     } catch (error) {

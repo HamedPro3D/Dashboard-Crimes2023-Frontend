@@ -15,7 +15,7 @@ const BarChart = () => {
 
   const fetchData = async (crimeDesc) => {
     try {
-      const response = await fetch(`http://localhost:5000/get_crime_count_and_hours/${crimeDesc}`);
+      const response = await fetch(`https://1d4a-181-235-31-152.ngrok-free.app/get_crime_count_and_hours/${crimeDesc}`);
       const data = await response.json();
       setData(data);
       renderBarChart(data);

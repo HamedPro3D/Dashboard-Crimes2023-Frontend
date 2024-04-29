@@ -38,7 +38,7 @@ const AreaCountChart = () => {
 
   useEffect(() => {
     const fetchData = () => {
-      fetch('http://localhost:5000/get_area_count_total')
+      fetch('https://1d4a-181-235-31-152.ngrok-free.app/get_area_count_total')
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');

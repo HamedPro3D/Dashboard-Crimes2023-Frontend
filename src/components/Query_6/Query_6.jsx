@@ -42,7 +42,7 @@ const PieChart = () => {
 
   const fetchData = async (weaponDesc) => {
     try {
-      const response = await fetch(`http://localhost:5000/get_gender_distribution_by_weapon/${weaponDesc}`);
+      const response = await fetch(`https://1d4a-181-235-31-152.ngrok-free.app/get_gender_distribution_by_weapon/${weaponDesc}`);
       const data = await response.json();
       setData(data);
       updateChart(data);

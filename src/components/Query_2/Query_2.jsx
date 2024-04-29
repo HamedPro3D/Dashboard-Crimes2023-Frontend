@@ -72,7 +72,7 @@ function CrimeVictimsChart() {
 
   const fetchData = async (selectedDate) => {
     try {
-      const response = await fetch(`http://localhost:5000/get_victims_by_sex/${selectedDate}`);
+      const response = await fetch(`https://1d4a-181-235-31-152.ngrok-free.app/get_victims_by_sex/${selectedDate}`);
       const data = await response.json();
       setVictimData(data);
       const seriesData = [

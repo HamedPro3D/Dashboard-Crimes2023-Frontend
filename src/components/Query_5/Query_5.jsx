@@ -14,7 +14,7 @@ const VictimsByDescentAndArea = () => {
 
   const fetchVictimData = async (areaName) => {
     try {
-      const response = await fetch(`http://localhost:5000/get_victims_by_descent_and_area/${encodeURIComponent(areaName)}`);
+      const response = await fetch(`https://1d4a-181-235-31-152.ngrok-free.app/get_victims_by_descent_and_area/${encodeURIComponent(areaName)}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
