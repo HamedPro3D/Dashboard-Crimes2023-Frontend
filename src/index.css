@@ -1,0 +1,54 @@
+/* Import roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/* Import montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root{
+    --background-color:#f5f5f5;
+    --header-color: white;
+    --sub-background-color: #7d0a0a;
+    --text-color: #000000;
+    --card-color: #e8eae7;
+    --title-color: #7d0a0a;
+    --font-family:'Roboto', sans-serif;
+    --font-family-title:'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+header, footer{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+main{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+select{
+    font-family: var(--font-family);
+    font-size: 1em;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--sub-background-color);
+    color: var(--header-color);
+    border: 2px solid var(--sub-background-color);
+    border-radius: 20px;
+    font-family: var(--font-family-title);
+}
+

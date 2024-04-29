@@ -1,0 +1,15 @@
+/* Prop.css */
+
+.crime-dashboard-container {
+  color: white;
+  text-align: center; 
+  margin: 0 auto; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7em; 
+}
+
+@media (max-width: 768px) {
+  .crime-dashboard-container {
+      margin: 0; 
+  }
+}

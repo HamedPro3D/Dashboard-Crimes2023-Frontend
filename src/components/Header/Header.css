@@ -1,0 +1,17 @@
+.header {
+    font-family: var(--font-family-title);
+    background-color: var(--sub-background-color);
+    color: var(--header-color);
+    padding: 70px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header h1{
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+  }
+  
