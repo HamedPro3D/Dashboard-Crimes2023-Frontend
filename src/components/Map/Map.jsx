@@ -23,7 +23,7 @@ const CrimeMap = () => {
     try {
       if (!selectedArea) return;
 
-      const response = await fetch(`https://1d4a-181-235-31-152.ngrok-free.app/get_area_crime_concentration/${selectedArea}`);
+      const response = await fetch(`https://cb30da3ffab8548189c11abed5d83d0b.serveo.net/get_area_crime_concentration/${selectedArea}`);
       const data = await response.json();
       setAreasData(data);
     } catch (error) {

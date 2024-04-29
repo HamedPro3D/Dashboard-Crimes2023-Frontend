@@ -5,7 +5,7 @@ const TotalCrimeCount = () => {
 
   useEffect(() => {
     const fetchData = () => {
-      fetch('https://1d4a-181-235-31-152.ngrok-free.app/get_total_crime_count')
+      fetch('https://cb30da3ffab8548189c11abed5d83d0b.serveo.net/get_total_crime_count')
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
