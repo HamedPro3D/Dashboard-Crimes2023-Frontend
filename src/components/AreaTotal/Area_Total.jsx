@@ -38,7 +38,7 @@ const AreaCountChart = () => {
 
   useEffect(() => {
     const fetchData = () => {
-      fetch('https://cb30da3ffab8548189c11abed5d83d0b.serveo.net/get_area_count_total')
+      fetch('https://a14e3c4593502ea14874cf17666c6478.serveo.net/get_area_count_total')
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');

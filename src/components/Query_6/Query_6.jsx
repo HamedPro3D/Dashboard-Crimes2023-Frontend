@@ -42,7 +42,7 @@ const PieChart = () => {
 
   const fetchData = async (weaponDesc) => {
     try {
-      const response = await fetch(`https://cb30da3ffab8548189c11abed5d83d0b.serveo.net/get_gender_distribution_by_weapon/${weaponDesc}`);
+      const response = await fetch(`https://a14e3c4593502ea14874cf17666c6478.serveo.net/get_gender_distribution_by_weapon/${weaponDesc}`);
       const data = await response.json();
       setData(data);
       updateChart(data);

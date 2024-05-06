@@ -23,7 +23,7 @@ const CrimeMap = () => {
     try {
       if (!selectedArea) return;
 
-      const response = await fetch(`https://cb30da3ffab8548189c11abed5d83d0b.serveo.net/get_area_crime_concentration/${selectedArea}`);
+      const response = await fetch(`https://a14e3c4593502ea14874cf17666c6478.serveo.net/get_area_crime_concentration/${selectedArea}`);
       const data = await response.json();
       setAreasData(data);
     } catch (error) {
